@@ -40,6 +40,20 @@ form
         color: red!important
   .help-block
     display: none
+  &.dark-form
+    color: #fff
+    input[type="text"]
+      background-color: transparent
+      color: #fff
+      border-color: #fff
+      &::placeholder
+        color: #fff
+    .btn
+      &:hover
+        background-color: darken($accent, 5%)
+        border-color: darken($accent, 5%)
+        color: #fff
+
 
 
 
