@@ -41,6 +41,13 @@ $(document).ready(function(){
      * end mobile-mnu customization
      */
 
+    let i = 1;
+
+    $('.intro-item').each(function(){
+        $(this).find('.pulse').css('animation-delay', i + 's');
+        i++;
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

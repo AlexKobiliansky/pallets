@@ -1,0 +1,100 @@
+.s-intro
+  padding: 110px 0 50px
+  background-image: url('../img/bg-intro-1.jpg')
+  +bg-cover
+  background-position: center bottom
+  h1
+    font-size: 58px
+    font-weight: 700
+    line-height: 1
+    color: #533621
+    background: url('../img/bg-mob-mnu.jpg') no-repeat
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    margin-bottom: 40px
+  .btn
+    font-size: 34px
+    padding-left: 65px
+    padding-right: 65px
+    box-shadow: 0 0 30px 10px rgba(#000, .2)
+    &:hover
+      background-color: darken($accent, 5%)
+      border-color: darken($accent, 5%)
+      color: #fff
+
+.intro-img
+  margin-left: auto
+  margin-right: auto
+
+.intro-list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 35px
+
+.intro-item
+  width: calc(50% - 10px)
+  margin-bottom: 30px
+  &-plus
+    display: inline-flex
+    position: relative
+    width: 26px
+    height: 26px
+    font-weight: 500
+    font-size: 24px
+    color: $accent
+    background-color: #fade1f
+    line-height: 1
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    margin-right: 20px
+    &:before, &:after
+      content: ''
+      position: absolute
+      border-radius: 50%
+      border: 1px solid #d4e295
+      opacity: .5
+    &:before
+      width: calc(100% + 4px)
+      height: calc(100% + 4px)
+      left: -2px
+      top: -2px
+    &:after
+      width: calc(100% + 14px)
+      height: calc(100% + 14px)
+      left: -7px
+      top: -7px
+  &-desc
+    display: inline-block
+    white-space: nowrap
+    font-size: 22px
+    font-weight: 500
+    color: #fff
+
+.plus
+  position: relative
+  z-index: 2
+
+.pulse
+  width: 26px
+  height: 26px
+  position: absolute
+  left: calc(50% - 13px)
+  top: calc(50% - 13px)
+  background-color: #fade1f
+  animation: pulse 6s infinite ease-in-out
+  border-radius: 50%
+
+
+
+@keyframes pulse
+  0%
+    transform: scale(1)
+    opacity: 1
+  10%
+    transform: scale(1.8)
+    opacity: 0
+  100%
+    transform: scale(10)
+    opacity: 0
