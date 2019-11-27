@@ -1,0 +1,122 @@
+.s-production
+  position: relative
+
+.products-wrap
+  margin-top: 30px
+  padding: 0 90px
+  ul
+    display: flex
+    justify-content: space-between
+    margin-bottom: 35px
+    position: relative
+    z-index: 2
+  li
+    a
+      display: inline-block
+      font-size: 22px
+      color: #979797
+      cursor: pointer
+      +mt(.3s)
+      line-height: 1
+      white-space: nowrap
+      padding: 13px 25px 15px
+      border: 1px solid #989898
+      text-align: center
+      border-radius: 5px
+      background-color: #fff
+    &.ui-tabs-active
+      a
+        border-color: $accent
+        color: $accent
+        
+.product-item
+  display: flex
+  border-radius: 10px
+  overflow: hidden
+  box-shadow: 0 0 35px 10px rgba(#000, .05)
+  position: relative
+  z-index: 2
+  &-img
+    background-color: #fff9ec
+    +bg-cover
+    width: calc(50% - 25px)
+  &-content
+    background-color: #fff
+    width: calc(50% + 25px)
+    border-left: 2px solid #e8e8e8
+    padding: 35px 120px 70px 35px
+  &-title
+    font-size: 28px
+    font-weight: 900
+    margin-bottom: 25px
+  &-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 50px
+  &-order
+    padding-left: 12px
+    border-left: 3px solid $accent
+    line-height: 1
+
+
+.order-title
+  font-size: 21px
+  font-weight: 500
+  margin-bottom: 5px
+
+.order-desc
+  font-size: 18px
+  font-weight: 300
+  line-height: 1.15
+  a
+    font-weight: 500
+    white-space: nowrap
+    &:hover
+      color: $accent
+      text-decoration: underline
+
+
+.product-li
+  width: calc(50% - 10px)
+  position: relative
+  font-size: 18px
+  padding-left: 15px
+  margin-bottom: 10px
+  &:before
+    content: ''
+    position: absolute
+    width: 6px
+    height: 6px
+    background-color: #f6da24
+    border-radius: 50%
+    left: 0
+    top: 8px
+
+.par-leaves
+  position: absolute
+
+.par-leaves-1
+  top: -10px
+  left: 15px
+
+.par-leaves-2
+  top: 45px
+  left: 245px
+
+.par-leaves-3
+  top: 190px
+  left: 100px
+
+.par-leaves-4
+  top: 87px
+  left: 380px
+
+.par-leaves-5
+  top: 410px
+  left: 370px
+
+.scobs-img
+  position: absolute
+  right: 0
+  bottom: 0

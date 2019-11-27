@@ -6,6 +6,12 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .products-wrap
+    padding: 0
+    li
+      a
+        font-size: 20px
+
   .body-form
     padding-left: 0
     padding-right: 0
@@ -44,6 +50,30 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .section-title
+    font-size: 28px
+
+  .products-wrap
+    ul
+      flex-wrap: wrap
+      justify-content: center
+    li
+      a
+        font-size: 16px
+        margin: 0 5px 10px
+
+  .product-item
+    &-content
+      padding-left: 20px
+      padding-top: 20px
+      padding-bottom: 30px
+      padding-right: 20px
+    &-list
+      margin-bottom: 30px
+
+  .product-li
+    font-size: 16px
 
   form
     h3
@@ -104,6 +134,19 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .product-item
+    flex-direction: column
+    &-img
+      height: 300px
+      width: 100%
+    &-content
+      width: 100%
+      border-left: none
+      border-top: 2px solid #e8e8e8
+
+  .par-leaves
+    display: none
+
   .body-form
     .form-labels-wrap
       flex-wrap: wrap
@@ -152,6 +195,26 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .product-item
+    &-img
+      height: 240px
+    &-title
+      font-size: 24px
+
+  .order-title
+    font-size: 18px
+  .order-desc
+    font-size: 16px
+
+  .products-wrap
+    li
+      a
+        font-size: 14px
+        padding: 5px 10px 7px
+
+  .section-desc
+    font-size: 16px
 
   .s-form
     padding: 40px 0 20px
