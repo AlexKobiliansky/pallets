@@ -1,0 +1,82 @@
+.s-form
+  background-color: #e6e6e6
+
+form
+  h3
+    font-size: 36px
+    font-weight: 700
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 15px
+  p
+    font-size: 18px
+    font-weight: 300
+    text-align: center
+    padding-left: 160px
+    padding-right: 160px
+    margin-bottom: 35px
+  input[type="text"]
+    width: 100%
+    font-size: 20px
+    padding-top: 10px
+    padding-bottom: 12px
+    padding-right: 5px
+    padding-left: 40px
+    border-radius: 10px
+    line-height: 1
+    border: 1px solid #b8b8b8
+    color: #b8b8b8
+    &::placeholder
+      color: #b8b8b8
+    &:focus
+      border-color: $accent
+      color: $accent
+      &::placeholder
+        color: $accent
+    &.error
+      border-color: red!important
+      color: red!important
+      &::placeholder
+        color: red!important
+  .help-block
+    display: none
+
+
+
+.body-form
+  padding-left: 160px
+  padding-right: 160px
+  .form-labels-wrap
+    display: flex
+    justify-content: space-between
+  .btn-wrap
+    width: 250px
+    label
+      width: 100%
+  label
+    width: calc((100% - 290px)/2)
+  .btn
+    width: 250px
+
+.label-checkbox
+  margin-top: 15px
+  font-size: 14px
+  line-height: 1.5
+  margin-bottom: 0
+
+
+.jq-checkbox
+  width: 20px
+  height: 20px
+  background: #fff
+  &.focused
+    border-color: $accent
+  &.checked
+    .jq-checkbox__div
+      width: 11px
+      height: 6px
+      margin-left: 4px
+      margin-top: 4px
+      border-bottom-color: $accent
+      border-left-color: $accent
+

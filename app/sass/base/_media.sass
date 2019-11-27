@@ -6,6 +6,10 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .body-form
+    padding-left: 0
+    padding-right: 0
+
   .s-intro
     h1
       font-size: 48px
@@ -40,6 +44,21 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  form
+    h3
+      font-size: 28px
+    p
+      padding-left: 40px
+      padding-right: 40px
+
+  .body-form
+    .btn-wrap, .btn
+      width: 200px
+    label
+      width: calc((100% - 240px)/2)
+    input[type="text"]
+      padding-left: 20px
 
   .s-intro
     padding: 50px 0
@@ -85,6 +104,19 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .body-form
+    .form-labels-wrap
+      flex-wrap: wrap
+    label
+      width: 100%
+      margin-bottom: 15px
+    .btn-wrap
+      //margin-top: 15px
+      text-align: center
+      width: 100%
+    .label-checkbox
+      text-align: left
+
   .s-intro
     background-position: top right
     h1
@@ -121,6 +153,17 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-form
+    padding: 40px 0 20px
+
+  form
+    p
+      font-size: 16px
+      padding-left: 0
+      padding-right: 0
+    input[type="text"]
+      font-size: 18px
+
   .s-intro
     h1
       font-size: 28px
@@ -145,6 +188,10 @@
       width: 100%
 
 @media screen and (max-width: 420px)
+
+  form, .body-form
+    .btn
+      width: 100%
 
   .mess-item
     margin-right: 5px
