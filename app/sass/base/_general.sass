@@ -20,7 +20,7 @@ body
   font-size: 16px
   min-width: 320px
   position: relative
-  line-height: 1.5
+  line-height: 1.2
   font-family: $default-font
   overflow-x: hidden
   color: $text
@@ -50,6 +50,7 @@ a:hover, a:active, a:focus
 a
   color: $accent
   text-decoration: none
+  +mt(.3s)
 
 a, li, button
   outline: none!important
@@ -61,13 +62,25 @@ ul
 
 .hidden
   display: none!important
-
-//pixel-glass custom
-//html
-//  background-repeat: no-repeat
-//  background-position: 50% 0
-//  background-image: url('../img/layout/test.png')
-
 // ======= END TEMPLATE STYLES =======
 
-
+.btn
+  display: inline-block
+  cursor: pointer
+  line-height: 1
+  white-space: nowrap
+  +mt(.3s)
+  font-size: 24px
+  padding: 10px 30px 12px
+  border: 2px solid $accent
+  border-radius: 10px
+  background-color: $accent
+  color: #fff
+  text-align: center
+  &:hover
+    background-color: #fff
+    color: $accent
+  &.disabled
+    filter: grayscale(.7)
+    &:hover, &:active, &:focus
+      box-shadow: none

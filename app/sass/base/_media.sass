@@ -6,15 +6,142 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .top-line
+    .btn
+      font-size: 20px
+      padding-left: 20px
+      padding-right: 20px
+    .contacts
+      .call
+        font-size: 18px
+    .mail
+      padding-left: 30px
+      &:before
+        width: 21px
+        height: 16px
+        top: calc(50% - 8px)
+
+  .site-name
+    font-size: 22px
+
+  .main-mnu
+    li
+      a
+        &:after
+          right: -30px
+
 // ≥992px
 +media-breakpoint-down(md)
+  .main-mnu
+    ul
+      font-size: 16px
+    li
+      a
+        &:after
+          right: -21px
+          height: 14px
+          top: calc(50% - 7px)
+
+  .top-line
+    .btn
+      width: auto
+      margin-top: 15px
+    .mail
+      width: auto
+    .container
+      flex-wrap: wrap
+    .contacts
+      margin-left: 0
+  .topline-item
+    width: 50%
+
+  .messangers
+    flex-grow: 2
+    text-align: right
+
 
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .mnu-line
+    display: none
+
+  .hamburger
+    display: block
+
+  .top-line
+    .btn-wrap
+      order: 2
+      width: 100%
+      text-align: center
+    .contacts
+      margin-top: 10px
+
+  .logo
+    width: 100%
+
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .top-line
+    .contacts
+      margin-left: 5px
+      .call
+        font-size: 14px
+        margin-bottom: 3px
+
+  .mess-item
+    margin-right: 3px
+    img
+      max-width: 16px
+      height: auto
+      display: block
+      width: 100%
+
+@media screen and (max-width: 420px)
+
+  .mess-item
+    margin-right: 5px
+    img
+      max-width: 18px
+
+  .top-line
+    .container
+      padding-top: 10px
+      padding-bottom: 20px
+      flex-direction: column
+    .mail
+      margin-top: 15px
+    .contacts
+      width: 100%
+      flex-direction: column-reverse
+      margin-top: 15px
+      line-height: 1.2
+      .phones
+        text-align: center
+        margin-left: 0
+      .call
+        font-size: 18px
+        margin-bottom: 6px
+    .btn
+      font-size: 16px
+      padding-left: 35px
+      padding-right: 35px
+      margin-top: 20px
+
+  .messangers
+    flex-grow: initial
+    text-align: center
+    margin-top: 15px
+
+  .hamburger
+    top: 8px
+
+  .site-name
+    font-size: 20px
+    margin-bottom: 3px
+  .site-desc
+    font-size: 14px
 
 /*==========  Mobile First  ==========*/
 

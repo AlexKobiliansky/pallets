@@ -1,0 +1,162 @@
+.top-line
+  background-color: #fff
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 18px
+    padding-bottom: 14px
+    position: relative
+  .mail
+    position: relative
+    padding-left: 40px
+    color: $text
+    &:before
+      content: ''
+      position: absolute
+      width: 26px
+      height: 20px
+      +bg-cover
+      background-image: url('../img/icons/mail-icon.png')
+      left: 0
+      top: calc(50% - 10px)
+    &:hover
+      color: $accent
+  .contacts
+    display: flex
+    justify-content: space-between
+    margin-left: 15px
+    .phones
+      text-align: right
+      margin-left: 15px
+    .call
+      display: block
+      color: $text
+      font-weight: 700
+      font-size: 20px
+      line-height: 1
+      &:hover
+        color: $accent
+    .recall
+      color: $accent
+      &:hover
+        text-decoration: underline
+
+.site-name
+  font-size: 30px
+  font-weight: 700
+  color: $accent
+  line-height: 1
+  display: block
+  margin-bottom: 8px
+
+.site-desc
+  color: $text
+
+.mess-item
+  display: inline-block
+  margin-right: 5px
+  &:last-child
+    margin-right: 0
+
+.mnu-line
+  background-color: $accent
+  background-image: url('../img/bg-mnu.jpg')
+  background-position: center top
+  background-repeat: repeat-x
+
+.main-mnu
+  ul
+    display: flex
+    justify-content: space-between
+    line-height: 1
+    font-size: 20px
+    font-weight: 500
+    padding: 18px 0
+  li
+    a
+      color: #fff
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 2px
+        height: 18px
+        background-color: #fff
+        right: -53px
+        top: calc(50% - 9px)
+      &:hover
+        color: $accent
+    &:last-child
+      a
+        &:after
+          display: none
+
+.hamburger
+  position: absolute
+  right: 0
+  top: 25px
+  display: none
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before, .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+  background-color: #533621
+
+
+//mmenu customization start
+.mm-menu_theme-dark
+  background-image: url("../img/bg-mob-mnu.jpg")
+  text-transform: uppercase
+
+.mm-logo
+  display: block
+  margin: 0 auto
+  transform: scaleY(.51)
+
+.mm-navbars_top
+  border-color: transparent
+
+.mm-listitem, .mm-listitem .mm-btn_next, .mm-listitem .mm-btn_next:before, .mm-listitem:after, .mm-listview
+  border-color: rgba(#fff, .3)
+
+.mm-listitem
+  a
+    padding-top: 14px
+    padding-bottom: 12px
+
+.mm-navbar
+  border: none
+  height: 100px
+  padding: 0 20px
+
+
+.mm-menu_theme-dark .mm-navbar a, .mm-menu_theme-dark .mm-navbar>*
+  font-size: 22px
+  text-transform: none
+  font-weight: 700
+  letter-spacing: normal
+  text-align: left
+  color: $accent
+  line-height: 1.2
+
+.mm-menu_theme-dark .mm-listview a:not(.mm-btn_next)
+  color: #fff
+  font-size: 15px
+
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+  margin-top: 35px
+
+.mm-navbar__title
+  span
+    display: block
+    color: #fff
+    opacity: .7
+    font-weight: normal
+    font-size: 14px
+
+//mmenu customization end
+
+
+
+
+
+
