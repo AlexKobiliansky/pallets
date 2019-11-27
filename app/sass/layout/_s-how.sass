@@ -1,0 +1,44 @@
+.s-how
+  position: relative
+  background-image: url('../img/bg-how.jpg')
+  +bg-cover
+
+.how-wrap
+  margin-top: 40px
+  display: flex
+  justify-content: space-between
+
+.how-item
+  width: calc(20% - 40px)
+  text-align: center
+  &-img
+    width: 130px
+    height: 130px
+    background-image: url('../img/bg-how-item.jpg')
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid $accent
+    border-radius: 50%
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 25px
+    position: relative
+    img
+      position: relative
+      z-index: 2
+      background-image: url('../img/noise.jpg')
+    &:before
+      content: ''
+      position: absolute
+      width: calc(100% + 16px)
+      height: calc(100% + 16px)
+      border: 1px dashed $accent
+      border-radius: 50%
+      left: -8px
+      top: -8px
+  &-title
+    font-size: 20px
+    font-weight: 500
+    color: #362312
+    line-height: 1.1
