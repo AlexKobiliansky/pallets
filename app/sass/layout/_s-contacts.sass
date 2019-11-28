@@ -1,0 +1,90 @@
+.s-contacts
+  padding: 0
+  position: relative
+
+#map
+  height: 560px
+  background-color: #aeaeae
+  position: relative
+  +bg-cover
+
+.contacts-block
+  position: absolute
+  width: 380px
+  background-color: #fff
+  padding: 25px 35px
+  border-radius: 5px
+  left: calc((100vw - 1200px)/2)
+  top: 75px
+  z-index: 2
+  box-shadow: 0 0 20px 2px rgba(#000, .1)
+  h2
+    line-height: 1
+    font-size: 30px
+    font-weight: 700
+    margin-bottom: 15px
+    text-transform: uppercase
+
+.contact-item
+  margin-bottom: 20px
+  line-height: 1
+  &-title
+    font-size: 13px
+    text-transform: uppercase
+    color: $accent
+    margin-bottom: 5px
+  &-desc
+    font-size: 18px
+    font-weight: 500
+  a
+    color: $text
+    &:hover
+      color: $accent
+
+
+.loader
+  position: absolute
+  top: 0
+  left: 0
+  box-sizing: border-box
+  width: 100%
+  height: 100%
+  overflow: hidden
+  color: #000000
+  transition: opacity .7s ease
+  opacity: 0
+  background-color: rgba(0,0,0,.55)
+  z-index: -2
+
+.loader:after,
+.loader:before
+  box-sizing: border-box
+
+.loader.is-active
+  top: 0
+  opacity: 1
+  z-index: 2
+
+.loader-default:after
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px #ffffff
+  border-left-color: transparent
+  border-radius: 50%
+
+@keyframes rotation
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(359deg)
+
+@keyframes blink
+  from
+    opacity: .5
+  to
+    opacity: 1
