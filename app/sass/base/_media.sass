@@ -76,6 +76,11 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .about-content
+    margin-left: 40px
+    margin-right: 40px
+    font-size: 20px
+
   .how-item
     width: calc(20% - 20px)
     &-img
@@ -167,6 +172,10 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .about-content
+    margin-left: 0
+    margin-right: 0
+
   .s-how
     padding-bottom: 20px
 
@@ -239,6 +248,19 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .about-leaves
+    display: none
+
+  .about-pallets
+    display: none
+
+  .about-content
+    padding: 30px 25px
+    font-size: 18px
+    line-height: 1.2
+    p
+      margin-bottom: 16px
 
   .adv-leaves
     display: none
@@ -316,7 +338,7 @@
     .contacts
       margin-left: 5px
       .call
-        font-size: 14px
+        font-size: 13px
         margin-bottom: 3px
 
   .mess-item
