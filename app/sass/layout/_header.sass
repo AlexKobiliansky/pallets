@@ -74,7 +74,16 @@
     font-weight: 500
     padding: 18px 0
   li
+    flex-grow: 2
+    text-align: center
+    &:first-child
+      text-align: left
+      flex-grow: 1
+    &:last-child
+      text-align: right
+      flex-grow: 1
     a
+      display: block
       color: #fff
       position: relative
       &:after
@@ -83,7 +92,7 @@
         width: 2px
         height: 18px
         background-color: #fff
-        right: -53px
+        right: 0
         top: calc(50% - 9px)
       &:hover
         color: $accent

@@ -45,6 +45,7 @@ gulp.task('scripts', function() {
 		'app/libs/formstyler/jquery.formstyler.min.js',
 		'app/libs/jqueryTabs/jquery-ui.min.js',
 		'app/libs/magnificPopup/jquery.magnific-popup.min.js',
+		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

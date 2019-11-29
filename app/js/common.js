@@ -47,6 +47,8 @@ $(document).ready(function(){
 
     $('.preloader').fadeOut();
 
+    $(".main-mnu a").mPageScroll2id();
+
     /** FORMS START*/
     var uPhone = $('.user-phone');
     uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
@@ -86,7 +88,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
             setTimeout(function() {

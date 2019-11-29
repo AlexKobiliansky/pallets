@@ -70,12 +70,6 @@
   .site-name
     font-size: 22px
 
-  .main-mnu
-    li
-      a
-        &:after
-          right: -30px
-
 // ≥992px
 +media-breakpoint-down(md)
 
@@ -172,7 +166,7 @@
     li
       a
         &:after
-          right: -21px
+          //right: -21px
           height: 14px
           top: calc(50% - 7px)
 
@@ -273,6 +267,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .popup-form
+    padding: 25px 15px
+    p
+      padding-left: 0
+      padding-right: 0
 
   .contacts-block
     padding-left: 10px
